@@ -1,7 +1,9 @@
 ---
 title: "Hospital Emergency Room Efficiency Data Analysis"
-author: "Author: Sana Siddiqui, MD"
-output: html_document
+author: 'Author: Sana Siddiqui, MD'
+output:
+  pdf_document: default
+  html_document: default
 ---
 # Introduction
 
@@ -38,9 +40,13 @@ The dataset consists of ER visit records with key variables:
 The dataset was cleaned in a separate R script: `Scripts/Data_Cleaning.R`.
 
 Cleaning steps included:
+
   - Removing duplicate rows
+  
   - Standardizing column names
+  
   - Converting timestamps to proper date-time format
+  
   - Imputing missing patient satisfaction scores with the median
 
 ```{r}
